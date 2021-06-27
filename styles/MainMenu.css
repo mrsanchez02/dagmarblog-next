@@ -1,0 +1,64 @@
+.banner {
+    display: flex;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+}
+
+.banner__item{
+    flex: 1;
+    color: #fff;
+    padding: 1em;
+    font-size: 1.5em;
+    /* font-weight: bold; */
+    display: flex;
+    transition: flex-grow 0.3s;
+}
+
+.banner__item:hover{
+    flex-grow: 5;
+}
+
+.banner__item:hover .banner__title{
+    transform: rotate(0);
+    transition: transform 0.3s 0.1s;
+}
+
+.banner__title {
+    margin: auto;
+    transform: rotate(-90deg);
+    background: transparent;
+}
+
+.banner__item{
+    background: black;
+}
+
+/* .banner__item:nth-child(1){
+    background: tomato;
+}
+.banner__item:nth-child(2){
+    background: steelblue;
+}
+.banner__item:nth-child(3){
+    background: green;
+}
+.banner__item:nth-child(4){
+    background: rgb(165, 42, 159);
+}
+.banner__item:nth-child(5){
+    background: brown;
+} */
+
+@media screen and (max-width: 720px){
+    .banner{
+        flex-direction: column;
+        height: 70vh;
+    }
+    .banner__title{
+        transform: rotate(0);
+    }
+    .banner__item:hover{
+        flex-grow: 5;
+    }
+}
