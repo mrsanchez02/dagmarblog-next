@@ -34,7 +34,8 @@ const Home = ({ posts }) => (
         }}
       />
       <main>
-        <h1>Dagmar Blog</h1>
+        <h1>DagmarBlog...</h1>
+        <h2>Un Proyecto de DagmarTech</h2>
         <div>
           {
             posts.map(p => <Post key={p.id} post={p} />)
