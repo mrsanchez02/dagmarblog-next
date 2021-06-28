@@ -10,7 +10,7 @@ module.exports = phase => {
       if(isDevelopment){
         return "https://jsonplaceholder.typicode.com"
          } else {
-           return "https://api.dagmarblog.com"
+           return "https://jsonplaceholder.typicode.com"
          }
     })()
   }
